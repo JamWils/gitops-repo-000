@@ -1,8 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 metadata:
-  name: microservices-demo
+  name: podinfo-deploy
   namespace: wego-system
 resources:
-- ../../../apps/microservices-demo
-- ../../../apps/podinfo-deploy
+- app.yaml
+- podinfo-deploy-gitops-deploy.yaml
+- podinfo-deploy-gitops-source.yaml
