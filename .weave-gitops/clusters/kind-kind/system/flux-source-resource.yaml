@@ -10,5 +10,5 @@ spec:
     branch: main
   secretRef:
     name: wego-github-gitops-repo-000
-  url: ssh://git@github.com/JamWils/gitops-repo-000.git
+  url: ssh://git@github.com/jamwils/gitops-repo-000.git
 
