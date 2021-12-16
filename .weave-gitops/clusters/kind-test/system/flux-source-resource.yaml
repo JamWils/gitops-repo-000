@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: wego-github-gitops-repo-000
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: wego-github-gitops-repo-000
+  url: ssh://git@github.com/jamwils/gitops-repo-000.git
+
