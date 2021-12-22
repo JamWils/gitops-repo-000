@@ -7,7 +7,7 @@ metadata:
   name: microservices-demo
   namespace: wego-system
 spec:
-  branch: master
+  branch: staging
   config_url: ssh://git@github.com/JamWils/gitops-repo-000.git
   deployment_type: helm
   helm_target_namespace: sock-shop
