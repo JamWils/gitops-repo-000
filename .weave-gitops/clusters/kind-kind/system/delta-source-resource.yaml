@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: wego-github-gitops-repo-000
+  name: wego-github-gitops-repo-000-delta
   namespace: wego-system
 spec:
   interval: 5s
