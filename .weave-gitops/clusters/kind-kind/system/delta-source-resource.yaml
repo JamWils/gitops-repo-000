@@ -11,3 +11,6 @@ spec:
   secretRef:
     name: wego-github-gitops-repo-000
   url: ssh://git@github.com/jamwils/gitops-repo-000.git
+  ignore: |
+    /*
+    !/.weave-gitops
