@@ -4,6 +4,5 @@ metadata:
   name: podinfo-deploy
   namespace: wego-system
 resources:
-- app.yaml
 - podinfo-deploy-gitops-deploy.yaml
 - podinfo-deploy-gitops-source.yaml
