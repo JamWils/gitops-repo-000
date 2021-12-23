@@ -4,6 +4,5 @@ metadata:
   name: microservices-demo
   namespace: wego-system
 resources:
-- app.yaml
 - microservices-demo-gitops-deploy.yaml
 - microservices-demo-gitops-source.yaml
