@@ -1,0 +1,14 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: gitops-webapp
+  namespace: wego-system
+spec:
+  providerRef:
+    name: internal-provider
+  eventSeverity: info
+  eventSources:
+    - kind: GitRepository
+      name: '*'
+    # - kind: Kustomization
+    #   name: '*'

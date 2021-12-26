@@ -1,0 +1,14 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: gitops-app-runtime
+  namespace: wego-system
+spec:
+  interval: 30s
+  path: ./.weave-gitops/gitops
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: wego-github-gitops-repo-000
+
