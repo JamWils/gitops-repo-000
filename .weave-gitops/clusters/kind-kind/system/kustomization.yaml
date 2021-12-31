@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ./flux-runtime.yaml
+- ./flux-source-resource.yaml
+- ./flux-system-kustomization-resource.yaml
+- ./flux-user-kustomization-resource.yaml
+- ./gitops-runtime-kustomization.yaml
+- ./gitops-runtime.yaml
+- ./wego-app.yaml
+- ./wego-config.yaml
+- ./wego-system.yaml
+- ../../../gitops/delta-source-resource.yaml
+- ../../../gitops/webhook-source-alert.yaml
+- ../../../gitops/webhook-source-provider.yaml
