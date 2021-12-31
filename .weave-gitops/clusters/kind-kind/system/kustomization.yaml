@@ -6,7 +6,6 @@ resources:
 - ./flux-system-kustomization-resource.yaml
 - ./flux-user-kustomization-resource.yaml
 - ./gitops-runtime-kustomization.yaml
-- ./gitops-runtime.yaml
 - ./wego-app.yaml
 - ./wego-config.yaml
 - ./wego-system.yaml
