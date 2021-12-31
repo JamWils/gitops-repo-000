@@ -5,4 +5,4 @@ metadata:
   namespace: wego-system
 spec:
   type: generic
-  address: http://wego-app.wego-system.svc.cluster.local/gitops/source/event/
+  address: http://wego-app.wego-system.svc.cluster.local:9001/gitops/source/event
