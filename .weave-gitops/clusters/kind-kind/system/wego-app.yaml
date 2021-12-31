@@ -13,8 +13,8 @@ spec:
       serviceAccountName: wego-app-service-account
       containers:
         - name: wego-app
-          image: ghcr.io/weaveworks/wego-app:v0.6.0-11-g8189a3ab
-          args: ["ui", "run", "-l", "--helm-repo-namespace", "wego-system"]
+          image: jamweave/weave-gitops-test:latest
+          args: [ "ui", "run", "-l", "--helm-repo-namespace", "wego-system" ]
           ports:
             - containerPort: 9001
               protocol: TCP
