@@ -1,8 +1,8 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Provider
 metadata:
-  name: internal-provider
+  name: webhook-source-provider
   namespace: wego-system
 spec:
   type: generic
-  address: http://127.0.0.1/gitops/source/event/
+  address: http://wego-app.wego-system.svc.cluster.local/gitops/source/event/
