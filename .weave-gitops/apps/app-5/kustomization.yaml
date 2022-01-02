@@ -1,7 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-commonLabels:
-  weave.works.gitops/app: app-5
-kind: Kustomization
-metadata:
-  name: app-5
-  namespace: wego-system
