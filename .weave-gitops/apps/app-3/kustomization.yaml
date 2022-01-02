@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+commonLabels:
+  app.weave.works.gitops/app: app-3
+kind: Kustomization
+metadata:
+  annotations:
+    app.weave.works.gitops/app-description: This app will not do much
+    app.weave.works.gitops/app-id: fbcf70cf-bb93-451e-9a24-f261d13e0ae0
+    app.weave.works.gitops/app-version: v1beta1
+  name: app-3
+  namespace: wego-system
