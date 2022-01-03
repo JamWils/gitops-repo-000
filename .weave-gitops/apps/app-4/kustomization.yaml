@@ -5,7 +5,7 @@ kind: Kustomization
 metadata:
   annotations:
     app.weave.works.gitops/app-description: This app will not do much
-    app.weave.works.gitops/app-id: bb2986db-2925-4bc6-9191-f0951cc9cec9
+    app.weave.works.gitops/app-id: 9bcd23c4-81a8-4e35-98fb-c1d1985aa48b
     app.weave.works.gitops/app-version: v1beta1
   name: app-4
   namespace: wego-system
