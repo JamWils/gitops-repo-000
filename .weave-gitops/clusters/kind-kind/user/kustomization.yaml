@@ -6,3 +6,4 @@ metadata:
 resources:
 - ../../../apps/microservices-demo
 - ../../../apps/podinfo-deploy
+- ../../../apps/podinfo-deploy
