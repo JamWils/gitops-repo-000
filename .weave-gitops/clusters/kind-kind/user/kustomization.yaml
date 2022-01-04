@@ -3,5 +3,3 @@ kind: Kustomization
 metadata:
   name: microservices-demo
   namespace: wego-system
-resources:
-- ../../../apps/podinfo-deploy
