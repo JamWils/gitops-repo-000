@@ -1,0 +1,11 @@
+apiVersion: gitops.weave.works/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: null
+  labels:
+    gitops.weave.works/app-id: 624804ab-553f-4cb9-966a-066c35a4fa56
+  name: app-11
+  namespace: wego-system
+spec:
+  description: This app will not do much
+status: {}
