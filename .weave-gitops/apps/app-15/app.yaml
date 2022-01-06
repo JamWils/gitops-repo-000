@@ -1,4 +1,4 @@
-apiVersion: wego.weave.works/v1alpha1
+apiVersion: gitops.weave.works/v1alpha1
 kind: Application
 metadata:
   creationTimestamp: null
