@@ -5,4 +5,4 @@ metadata:
   namespace: wego-system
 resources:
 - ../../../apps/podinfo-deploy
-- ../../../apps/app-11
+- ../../../apps/app-15
