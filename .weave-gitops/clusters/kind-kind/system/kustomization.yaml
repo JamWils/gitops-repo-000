@@ -9,7 +9,5 @@ resources:
 - ./wego-app.yaml
 - ./wego-config.yaml
 - ./wego-system.yaml
-- ../../../gitops/delta-source-resource.yaml
-- ../../../gitops/webhook-source-alert.yaml
-- ../../../gitops/webhook-source-provider.yaml
-- ../../../gitops/application-crd.yaml
+- ../../../gitops/app
+- ../../../gitops/runtime
