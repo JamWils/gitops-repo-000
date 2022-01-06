@@ -12,3 +12,4 @@ resources:
 - ../../../gitops/delta-source-resource.yaml
 - ../../../gitops/webhook-source-alert.yaml
 - ../../../gitops/webhook-source-provider.yaml
+- ../../../gitops/application-crd.yaml
