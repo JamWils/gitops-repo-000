@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
   name: gitops-app
-  namespace: flux-system
+  namespace: wego-system
 spec:
   interval: 1m0s
   sourceRef:
