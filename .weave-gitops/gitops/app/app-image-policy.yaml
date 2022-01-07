@@ -1,0 +1,11 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: gitops-app-policy
+  namespace: wego-system
+spec:
+  imageRepositoryRef:
+    name: gitops-app
+  policy:
+     numerical:
+      order: asc
