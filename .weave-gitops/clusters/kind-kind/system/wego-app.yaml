@@ -13,8 +13,8 @@ spec:
       serviceAccountName: wego-app-service-account
       containers:
         - name: wego-app
-          image: jamweave/weave-gitops-test:010620223 # {"$imagepolicy": "wego-system:gitops-app"}
-          args: [ "ui", "run", "-l", "--helm-repo-namespace", "wego-system" ]
+          image: jamweave/weave-gitops-test:010620224 # {"$imagepolicy": "wego-system:gitops-app"}
+          args: ["ui", "run", "-l", "--helm-repo-namespace", "wego-system"]
           ports:
             - containerPort: 9001
               protocol: TCP
@@ -43,21 +43,21 @@ metadata:
   name: resources-reader
   namespace: wego-system
 rules:
-  - apiGroups: [ "" ]
-    resources: [ "secrets" ]
-    verbs: [ "get","create" ]
-  - apiGroups: [ "kustomize.toolkit.fluxcd.io" ]
-    resources: [ "kustomizations" ]
-    verbs: [ "get" ]
-  - apiGroups: [ "helm.toolkit.fluxcd.io" ]
-    resources: [ "helmreleases" ]
-    verbs: [ "get" ]
-  - apiGroups: [ "source.toolkit.fluxcd.io" ]
-    resources: [ "helmrepositories" ]
-    verbs: [ "get", "list" ]
-  - apiGroups: [ "source.toolkit.fluxcd.io" ]
-    resources: [ "gitrepositories" ]
-    verbs: [ "get","list" ]
+  - apiGroups: [""]
+    resources: ["secrets"]
+    verbs: ["get", "create"]
+  - apiGroups: ["kustomize.toolkit.fluxcd.io"]
+    resources: ["kustomizations"]
+    verbs: ["get"]
+  - apiGroups: ["helm.toolkit.fluxcd.io"]
+    resources: ["helmreleases"]
+    verbs: ["get"]
+  - apiGroups: ["source.toolkit.fluxcd.io"]
+    resources: ["helmrepositories"]
+    verbs: ["get", "list"]
+  - apiGroups: ["source.toolkit.fluxcd.io"]
+    resources: ["gitrepositories"]
+    verbs: ["get", "list"]
 ---
 apiVersion: v1
 kind: ServiceAccount
