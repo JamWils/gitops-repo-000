@@ -4,3 +4,5 @@ resources:
 - ./delta-source-resource.yaml
 - ./webhook-source-alert.yaml
 - ./webhook-source-provider.yaml
+- ./app-image-policy.yaml
+- ./app-image-repository.yaml
