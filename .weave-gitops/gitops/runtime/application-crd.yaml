@@ -31,35 +31,11 @@ spec:
           spec:
             description: ApplicationSpec defines the desired state of Application
             properties:
-              branch:
-                description: Branch is the branch in the repository where the k8s yaml files for this application are stored.
-                type: string
-              config_url:
-                description: ConfigRepo is the address of the git repository containing the automation for this application
-                type: string
-              deployment_type:
-                description: DeploymentType is the deployment method used to apply the manifests
-                enum:
-                - helm
-                - kustomize
-                type: string
               description:
                 description: Description tells you what the app is.
                 type: string
-              helm_target_namespace:
-                description: HelmTargetNamespace is the namespace in which to deploy an added Helm Chart
-                type: string
-              path:
-                description: Path is the path in the repository where the k8s yaml files for this application are stored.
-                type: string
-              source_type:
-                description: SourceType is the type of repository containing the app manifests
-                enum:
-                - helm
-                - git
-                type: string
-              url:
-                description: URL is the address of the git repository for this application
+              display_name:
+                description: DisplayName is a human readable format of the application name
                 type: string
             type: object
           status:
