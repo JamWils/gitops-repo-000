@@ -6,3 +6,4 @@ resources:
 - ./webhook-source-provider.yaml
 - ./app-image-policy.yaml
 - ./app-image-repository.yaml
+- ./app-image-automation.yaml
