@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./dev-cluster
+  path: ./.weave-gitops/clusters/dev-cluster
   prune: true
   sourceRef:
     kind: GitRepository
