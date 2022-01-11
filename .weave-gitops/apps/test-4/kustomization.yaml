@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+commonLabels:
+  gitops.weave.works/app-id: ad99be33-75fa-4cc8-8134-64fd9cc3bd82
+kind: Kustomization
+metadata:
+  name: test-4
+  namespace: test-space
+resources:
+- ./app.yaml
