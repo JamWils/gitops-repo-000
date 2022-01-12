@@ -1,0 +1,9 @@
+apiVersion: gitops.weave.works/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: null
+  name: app-20
+  namespace: wego-system
+spec:
+  description: ""
+status: {}

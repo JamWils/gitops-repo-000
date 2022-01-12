@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+commonLabels:
+  gitops.weave.works/app-id: 23060d07-0c8a-492f-bb08-b4e960b07988
+kind: Kustomization
+metadata:
+  name: app-20
+  namespace: wego-system
+resources:
+- ./app.yaml
