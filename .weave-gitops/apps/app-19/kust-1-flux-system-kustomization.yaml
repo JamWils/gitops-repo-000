@@ -1,0 +1,12 @@
+metadata:
+  creationTimestamp: null
+  name: kust-1
+  namespace: flux-system
+spec:
+  interval: 0s
+  path: ./deploy
+  prune: false
+  sourceRef:
+    kind: GitRepository
+    name: podinfo-app
+status: {}

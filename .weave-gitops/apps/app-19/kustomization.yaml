@@ -7,3 +7,4 @@ metadata:
   namespace: wego-system
 resources:
 - ./app.yaml
+- kust-1-flux-system-kustomization.yaml
