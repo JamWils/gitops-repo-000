@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+commonLabels:
+  gitops.weave.works/app-name: app-24
+kind: Kustomization
+metadata:
+  name: app-24
+  namespace: wego-system
+resources:
+- ./.weave-gitops/apps/app-24/app.yaml
