@@ -9,3 +9,4 @@ resources:
 - ./app.yaml
 - .weave-gitops/apps/app-21/kust-2-wego-system-kustomization.yaml
 - .weave-gitops/apps/app-21/kust-3-wego-system-kustomization.yaml
+- .weave-gitops/apps/app-21/kust-6-wego-system-kustomization.yaml
