@@ -7,3 +7,4 @@ metadata:
   namespace: wego-system
 resources:
 - ./app.yaml
+- .weave-gitops/apps/app-21/kust-2-wego-system-kustomization.yaml
