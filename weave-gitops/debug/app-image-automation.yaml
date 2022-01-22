@@ -20,5 +20,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./.weave-gitops/clusters/kind-kind/system
+    path: ./weave-gitops/clusters/dev-cluster/system
     strategy: Setters
