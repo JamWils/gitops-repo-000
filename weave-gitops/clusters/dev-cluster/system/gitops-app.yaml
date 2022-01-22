@@ -15,6 +15,7 @@ spec:
     metadata:
       labels:
         app: wego-app
+        test: this
     spec:
       serviceAccountName: wego-app-service-account
       containers:
