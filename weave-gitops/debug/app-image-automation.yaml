@@ -1,0 +1,24 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: gitops-app
+  namespace: wego-system
+spec:
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: wego-github-gitops-repo-000
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        email: james.wilson@weave.works
+        name: JamWils
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+    push:
+      branch: main
+  update:
+    path: ./.weave-gitops/clusters/kind-kind/system
+    strategy: Setters
