@@ -20,7 +20,7 @@ spec:
       serviceAccountName: wego-app-service-account
       containers:
         - name: wego-app
-          image: jamweave/weave-gitops-test:011820247 # {"$imagepolicy": "flux-system:gitops-app"}
+          image: jamweave/weave-gitops-test:011820248 # {"$imagepolicy": "flux-system:gitops-app"}
           args: [ "ui", "run", "-l", "--helm-repo-namespace", "flux-system" ]
           ports:
             - containerPort: 9001
