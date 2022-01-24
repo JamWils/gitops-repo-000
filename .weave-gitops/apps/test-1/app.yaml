@@ -1,7 +1,6 @@
 apiVersion: gitops.weave.works/v1alpha1
 kind: Application
 metadata:
-  creationTimestamp: null
   name: test-1
   namespace: test-space
 spec:
