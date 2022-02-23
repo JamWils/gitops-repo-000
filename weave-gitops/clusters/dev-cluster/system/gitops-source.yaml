@@ -6,5 +6,5 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: v2
+    branch: helm-chart
   url: ssh://git@github.com/weaveworks/weave-gitops
