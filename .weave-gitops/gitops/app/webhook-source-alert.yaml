@@ -10,3 +10,7 @@ spec:
   eventSources:
     - kind: GitRepository
       name: '*'
+    - kind: Policy
+      name: '*'
+    - kind: Terraform
+      name: '*'

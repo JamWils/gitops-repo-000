@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: ww-gitops
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: weave-gitops
+      sourceRef:
+        kind: GitRepository
+        name: ww-gitops
+  values:
+    namespace: wego-system
+  interval: 1m0s
+  releaseName: weave-gitops-release
+  targetNamespace: wego-system
