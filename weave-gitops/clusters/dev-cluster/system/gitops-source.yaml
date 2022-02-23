@@ -10,3 +10,8 @@ spec:
   secretRef:
     name: flux-system
   url: ssh://git@github.com/weaveworks/weave-gitops
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/charts/ 
