@@ -6,12 +6,8 @@ metadata:
 spec:
   chart:
     spec:
-      chart: weave-gitops
+      chart: charts/weave-gitops
       sourceRef:
         kind: GitRepository
         name: ww-gitops
-  values:
-    namespace: wego-system
   interval: 1m0s
-  releaseName: weave-gitops-release
-  targetNamespace: wego-system
