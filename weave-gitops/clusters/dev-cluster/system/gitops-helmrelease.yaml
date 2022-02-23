@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: charts/weave-gitops
+      chart: ./charts/weave-gitops
       sourceRef:
         kind: GitRepository
         name: ww-gitops
