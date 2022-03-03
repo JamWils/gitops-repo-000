@@ -10,6 +10,6 @@ spec:
       sourceRef:
         kind: GitRepository
         name: ww-gitops
-      values:
-        image: v2-preview
+  values:
+    image: v2-preview
   interval: 1m0s
