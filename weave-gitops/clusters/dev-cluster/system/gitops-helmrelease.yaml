@@ -11,6 +11,7 @@ spec:
         kind: GitRepository
         name: ww-gitops
   values:
+    namespace: flux-system
     image: latest
     containerRegistry: jamweave/gitops-server
     adminPassword: notsecure
