@@ -15,4 +15,4 @@ spec:
     image: latest
     containerRegistry: jamweave/gitops-server
     adminPassword: notsecure
-  interval: 1m0s
+  interval: 1m1s
