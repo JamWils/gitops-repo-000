@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: jlw-helm-patch
+    branch: v2-helm-fix
   secretRef:
     name: flux-system
   url: ssh://git@github.com/weaveworks/weave-gitops
