@@ -11,7 +11,7 @@ spec:
         kind: GitRepository
         name: ww-gitops
   values:
-    image: gitops-server:latest
-    containerRegistry: jamweave
+    image: latest
+    containerRegistry: jamweave/gitops-server
     adminPassword: notsecure
   interval: 1m0s
