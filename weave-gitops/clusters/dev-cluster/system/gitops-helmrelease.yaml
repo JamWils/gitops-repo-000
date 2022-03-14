@@ -12,7 +12,7 @@ spec:
         name: ww-gitops
   values:
     namespace: flux-system
-    image: v0.7.0-rc5
+    image: v0.7.0-rc0
     containerRegistry: jamweave/gitops-server
-    adminPassword: 2b$12$FagdLZKLqMMPklkDXaMtieM8Wtjyr.ClQJyupV09bBubT5nmHnStq
+    adminPassword: JDJiJDEyJEU5STRSU01VWTVMYUJrVHNQLmxiTy4zTDB2M1BTUHZIb1htN29kSE80TXN4MXZiZmVwRzdX
   interval: 1m0s
