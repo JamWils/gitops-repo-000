@@ -6,13 +6,13 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./charts/gitops-server
+      chart: ./charts/weave-gitops
       sourceRef:
         kind: GitRepository
         name: ww-gitops
   values:
     namespace: flux-system
-    image: v0.7.0-rc1
+    image: v0.7.0-rc0
     containerRegistry: jamweave/gitops-server
     adminPassword: JDJiJDEyJEU5STRSU01VWTVMYUJrVHNQLmxiTy4zTDB2M1BTUHZIb1htN29kSE80TXN4MXZiZmVwRzdX
   interval: 1m0s
