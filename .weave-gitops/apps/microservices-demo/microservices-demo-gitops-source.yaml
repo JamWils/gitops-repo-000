@@ -3,7 +3,7 @@ kind: GitRepository
 metadata:
   creationTimestamp: null
   name: microservices-demo
-  namespace: wego-system
+  namespace: flux-system
 spec:
   ignore: |-
     .weave-gitops/
