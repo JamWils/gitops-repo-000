@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: main
+    branch: jlw-role-binding-cust
   secretRef:
     name: flux-system
   url: ssh://git@github.com/weaveworks/weave-gitops
