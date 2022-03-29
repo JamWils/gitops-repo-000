@@ -4,6 +4,8 @@ metadata:
   name: ww-gitops
   namespace: flux-system
 spec:
+  releaseName: gitops-server
+  targetNamespace: flux-system
   chart:
     spec:
       chart: ./charts/gitops-server
