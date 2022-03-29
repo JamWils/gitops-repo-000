@@ -10,9 +10,13 @@ spec:
       sourceRef:
         kind: GitRepository
         name: ww-gitops
+  install:
+    remediation:
+      retries: 3
   values:
     namespace: flux-system
     image: v0.7.0-rc5
     containerRegistry: ghcr.io/weaveworks/wego-app
+    adminUsername: d2Vnby1hZG1pbi00MjQy
     adminPassword: JDJiJDEyJEU5STRSU01VWTVMYUJrVHNQLmxiTy4zTDB2M1BTUHZIb1htN29kSE80TXN4MXZiZmVwRzdX
   interval: 1m0s
