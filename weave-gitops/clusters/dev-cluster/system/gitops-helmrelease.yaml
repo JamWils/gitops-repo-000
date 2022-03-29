@@ -21,6 +21,8 @@ spec:
     image:
       tag: v0.7.0-rc5
       repository: ghcr.io/weaveworks/wego-app
-    adminUsername: d2Vnby1hZG1pbi00MjQy
-    adminPassword: JDJiJDEyJEU5STRSU01VWTVMYUJrVHNQLmxiTy4zTDB2M1BTUHZIb1htN29kSE80TXN4MXZiZmVwRzdX
+    adminUser:
+      create: true
+      username: d2Vnby1hZG1pbi00MjQy
+      password: JDJiJDEyJEU5STRSU01VWTVMYUJrVHNQLmxiTy4zTDB2M1BTUHZIb1htN29kSE80TXN4MXZiZmVwRzdX
   interval: 1m0s
