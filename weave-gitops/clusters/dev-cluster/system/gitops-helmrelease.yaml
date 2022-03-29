@@ -19,7 +19,7 @@ spec:
     namespace: flux-system
     additionalArgs: ["--insecure"]
     image:
-      tag: v0.7.0-rc5
+      tag: v0.7.0-rc6
       repository: ghcr.io/weaveworks/wego-app
     adminUser:
       create: true
