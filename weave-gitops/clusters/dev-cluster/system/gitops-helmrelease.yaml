@@ -23,6 +23,6 @@ spec:
       repository: ghcr.io/weaveworks/wego-app
     adminUser:
       create: true
-      username: d2Vnby1hZG1pbi00MjQy
-      password: JDJiJDEyJDEyR0tFWklNaEpuRDZWdjZxN2ZzVC5BQmFLSWRML0Q4b1ZpdURYNHJwazNRcUhEYUExTmlP
+      username: wego-admin-4242
+      password: notsecure
   interval: 1m0s
