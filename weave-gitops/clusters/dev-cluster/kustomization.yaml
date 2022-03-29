@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
 - ./system
 - ../../../apps/podinfo
-- ../../../apps/microservices-demo
