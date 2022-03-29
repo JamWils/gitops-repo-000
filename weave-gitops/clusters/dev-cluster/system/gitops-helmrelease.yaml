@@ -24,5 +24,5 @@ spec:
     adminUser:
       create: true
       username: d2Vnby1hZG1pbi00MjQy
-      password: JDJhJDEyJE9wQjBjWGk1RWNwZVRnUmZ4Z0NOTE9ENU1NOEVhL1BwVkloYXZpTjFQVldBc0p3a2lXRE5x
+      password: JDJiJDEyJG5MZmw3bEtCaVl6Z0FOMmFJM2lpNmV4WlNaOUtSc2oxOEM3Q0VXWThrc2NqOS5jNmJSWGlt
   interval: 1m0s
