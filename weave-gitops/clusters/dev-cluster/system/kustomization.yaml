@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - gitops-helmrelease.yaml
 - gitops-source.yaml
+- role.yaml
