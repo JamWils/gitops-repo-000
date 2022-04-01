@@ -23,7 +23,6 @@ spec:
       repository: ghcr.io/weaveworks/wego-app
     adminUser:
       create: true
-      role: jlw-admin-role
       username: wego-admin-4242
       password: notsecure
   interval: 1m0s
