@@ -39,6 +39,60 @@ flowchart TD
 
 ---
 ### Criteria
+1. This is a brand new cluster
+2. Flux is not already installed on the cluster.
+3. The **workload** does not exist on the cluster.
+4. All manifests are in the same repository.
+5. `gitops run` is run on the basic path
+
+```mermaid
+%%{init: { logLevel:0, startOnLoad: false, themeCSS:'.label { font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif; }' }}%%
+flowchart LR
+    run[gitops run] --> cluster
+    root <--> run
+    subgraph root[./ ]
+    subgraph sgp6 [ ]
+    subgraph clusters[./clusters]
+    subgraph sgp1 [ ]
+      subgraph my-cluster[./my-cluster]
+        subgraph sgp2 [ ]
+        dboard[gitops-dashboard.yaml]
+        subgraph flux[./flux-system]
+          a[gotk-components.yaml] 
+          b[gotk-sync.yaml]
+          c[kustomization.yaml]
+        end
+        end
+      end
+    end  
+    end
+    end
+    
+    end
+    subgraph cluster
+      direction TB
+      subgraph sgp5 [ ]
+        c-a[We install Flux CRDs and Controllers]
+        c-b[Temp Bucket and Kustomization]
+        c-c[Dev Bucket Server]
+      end
+    end
+      
+    
+classDef subgraph_padding fill:#000,stroke:none
+class sgp1,sgp2,sgp3,sgp4,sgp5 subgraph_padding
+
+classDef basic fill:#000;
+class clusters,my-cluster,flux,app,cluster basic;
+
+style root fill:#ebd08b,stroke:#000,color:#000
+style sgp6 fill:#5fd2e8,stroke:transparent,color:#000
+classDef create fill:#6eed9e,stroke:#000,color:#000;
+class a,b,c,dboard create
+````
+
+---
+### Criteria
 1. Flux is already installed on the cluster.
 2. The **workload** already exists on the cluster.
 3. The user is trying to update an existing workload and is running it in a specific directory.
@@ -49,15 +103,16 @@ flowchart TD
 flowchart TD
     root --> 2g
     root --> 3g
-    root --> 4g
-    subgraph 4g[./clusters]
+    root --> clusters
+    subgraph clusters[./clusters]
     subgraph sgp1 [ ]
-      subgraph 400g[./my-cluster]
+      subgraph my-cluster[./my-cluster]
         subgraph sgp2 [ ]
-        subgraph 410g[./app]
+        dboard[gitops-dashboard.yaml]
+        subgraph app[./app]
           d[dev-ks.yaml]
         end
-        subgraph 401g[./flux-system]
+        subgraph flux[./flux-system]
           a[gotk-components.yaml] 
           b[gotk-sync.yaml]
           c[kustomization.yaml]
@@ -83,7 +138,7 @@ classDef subgraph_padding fill:none,stroke:none
 class sgp1,sgp2,sgp3,sgp4 subgraph_padding
 
 classDef basic fill:transparent;
-class 3g,4g,400g,401g,410g basic;
+class 3g,clusters,my-cluster,flux,app basic;
 
 style 2g fill:#5fd2e8,stroke:#000,color:#000;
 style root fill:#ebd08b,stroke:#000,color:#000;
