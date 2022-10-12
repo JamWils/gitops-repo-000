@@ -1,0 +1,5 @@
+tls:
+  enabled: true
+config:
+  capi:
+    repositoryURL: <your config repo URL>
